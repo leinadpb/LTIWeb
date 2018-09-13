@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LTIWeb</title>
+    
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/main.min.css" />
+</head>
+<body>
+
+    <!-- Menu principal -->
+
+    Aqui va el principal
+    <!--  -->
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2018 - LTIWeb</p>
+        </footer>
+    </div>
+
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/popper.js"></script>
+    <script src="~/js/fontawesome.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
